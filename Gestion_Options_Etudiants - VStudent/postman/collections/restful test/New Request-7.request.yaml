@@ -1,0 +1,21 @@
+$kind: http-request
+name: POST etudiant
+url: 'http://localhost:8081/Gestion_Options_Etudiants_war_exploded/rest/etudiants'
+method: POST
+order: 9000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "identifiant": "10010",
+      "nom": "Etudiant 1",
+      "prenom": "Etudiant 1",
+      "option": {
+        "codeOption": 1
+      },
+      "anneeEtude": 2023,
+      "email": "etudiant1@example.com"
+    }
