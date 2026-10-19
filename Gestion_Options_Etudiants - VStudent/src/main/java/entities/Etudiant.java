@@ -1,6 +1,7 @@
 package entities;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 @XmlRootElement
 public class Etudiant {
@@ -47,6 +48,7 @@ public class Etudiant {
         this.prenom = prenom;
     }
 
+    @XmlTransient
     public Option getOption() {
         return option;
     }
